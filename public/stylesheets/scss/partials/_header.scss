@@ -1,0 +1,61 @@
+header[role="banner"] {
+  padding-top: 2em;
+  padding-bottom: 10.5em;
+  position: relative;
+  @include clearfix;
+
+  hgroup {
+    h1 { 
+      float: left;
+      @include columns(6);  
+      @include alpha;
+    }
+    h1, a { height: 97px; }
+    
+    h1 a {
+      @extend .ir;
+      width: 217px;
+      background: transparent url(/images/the47th/logo.jpg) top left no-repeat;
+      &:hover { border-bottom: none; }
+    }
+    h2 {
+      color: $quiet-color;
+      float: left;
+      font-family: $vollkornbolditalic-stack;
+      font-size: 2em;
+      font-weight: normal;
+      padding-top: 71px;
+      @include columns(10);
+      @include omega;
+    }
+        
+  }
+  
+  nav ul {
+    display: none;
+    position: absolute;
+    top: 2em;
+    left: 38.542%;
+    @include columns(10); 
+    @include omega;
+    
+    li {
+      float: left;
+      display: block;
+      @include columns(3,10);
+      
+      a {
+        display: block;
+        color: #4c3332;
+        font-family: $quicksandbold-stack;
+        font-size: 1.1em;
+        text-transform: uppercase;
+        text-decoration: none;
+        @include nowrap;
+        
+        &:hover { border: none; }
+      }
+    }
+  }
+  
+}

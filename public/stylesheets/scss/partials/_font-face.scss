@@ -1,0 +1,35 @@
+@include font-face("QuicksandBold", font-files(
+  "/stylesheets/fonts/quicksand/Quicksand_Bold-webfont.woff", woff,
+  "/stylesheets/fonts/quicksand/Quicksand_Bold-webfont.ttf", truetype, 
+  "/stylesheets/fonts/quicksand/Quicksand_Bold-webfont.svg", svg
+  ), "/stylesheets/fonts/quicksand/Quicksand_Bold-webfont.eot");
+
+@include font-face("QuicksandBook", font-files(
+  "/stylesheets/fonts/quicksand/Quicksand_Book-webfont.woff", woff,
+  "/stylesheets/fonts/quicksand/Quicksand_Book-webfont.ttf", truetype, 
+  "/stylesheets/fonts/quicksand/Quicksand_Book-webfont.svg", svg
+  ), "/stylesheets/fonts/quicksand/Quicksand_Book-webfont.eot");
+
+@include font-face("VollkornBoldItalic", font-files(
+  "/stylesheets/fonts/vollkorn/Vollkorn-BoldItalic-webfont.woff", woff,
+  "/stylesheets/fonts/vollkorn/Vollkorn-BoldItalic-webfont.ttf", truetype, 
+  "/stylesheets/fonts/vollkorn/Vollkorn-BoldItalic-webfont.svg", svg
+  ), "/stylesheets/fonts/vollkorn/Vollkorn-BoldItalic-webfont.eot");
+  
+@include font-face("VollkornBold", font-files(
+  "/stylesheets/fonts/vollkorn/Vollkorn-Bold-webfont.woff", woff,
+  "/stylesheets/fonts/vollkorn/Vollkorn-Bold-webfont.ttf", truetype, 
+  "/stylesheets/fonts/vollkorn/Vollkorn-Bold-webfont.svg", svg
+  ), "/stylesheets/fonts/vollkorn/Vollkorn-Bold-webfont.eot");
+  
+@include font-face("VollkornItalic", font-files(
+  "/stylesheets/fonts/vollkorn/Vollkorn-Italic-webfont.woff", woff,
+  "/stylesheets/fonts/vollkorn/Vollkorn-Italic-webfont.ttf", truetype, 
+  "/stylesheets/fonts/vollkorn/Vollkorn-Italic-webfont.svg", svg
+  ), "/stylesheets/fonts/vollkorn/Vollkorn-Italic-webfont.eot");
+  
+$quicksandbold-stack :        "QuicksandBold", Arial, Calibri, Tahoma, "Trebuchet MS", sans-serif;
+$quicksandbook-stack :        "QuicksandBook", Arial, Calibri, Tahoma, "Trebuchet MS", sans-serif;
+$vollkornbolditalic-stack :   "VollkornBoldItalic", Georgia, Palatino, "Palatino Linotype", Times, "Times New Roman", serif;
+$vollkornitalic-stack :       "VollkornItalic", Georgia, Palatino, "Palatino Linotype", Times, "Times New Roman", serif;
+$vollkornbold-stack :         "VollkornBold", Georgia, Palatino, "Palatino Linotype", Times, "Times New Roman", serif;

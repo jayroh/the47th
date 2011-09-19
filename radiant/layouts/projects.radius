@@ -1,0 +1,57 @@
+<!doctype html> 
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+  <r:snippet name="header-head-tags" />
+</head>
+<body id="projects">
+  <div id="container">
+    <r:snippet name="header" />
+    <div id="main">
+
+      <section id="projects">
+          <header>
+            <hgroup>
+              <h1>New & Notable</h1>
+              <h2>Lorem ipsum dolor sit amet, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam in.</h2>
+            </hgroup>
+          </header>
+
+          <ol>
+            <li>
+              <a href="#">
+                <h3>Ring Boxing Club</h3>
+                <ul>
+                  <li>Branding, Website, Business Cards</li>
+                </ul>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <h3>Ring Boxing Club</h3>
+                <ul>
+                  <li>Branding, Website, Business Cards</li>
+                </ul>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <h3>Ring Boxing Club</h3>
+                <ul>
+                  <li>Branding, Website, Business Cards</li>
+                </ul>
+              </a>
+            </li>
+          </ol>
+      </section>
+
+    </div><!-- close // #main -->
+    <r:snippet name="footer" />
+  </div><!-- close // #container -->
+  <r:snippet name="footer-javascript" />
+  <r:snippet name="footer-google-analytics" />
+</body>
+</html>

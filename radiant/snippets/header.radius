@@ -1,0 +1,17 @@
+<header role="banner">
+	<hgroup>
+		<h1><a href="/">The 47th</a></h1>
+		<h2>We love solving problems and making people smile.</h2>
+	</hgroup>
+	<nav>
+		<r:find url="/">
+			<ul>
+				<r:children:each>
+					<li class="<r:slug/><r:if_ancestor_or_self> active</r:if_ancestor_or_self>">
+						<r:link />
+					</li>
+				</r:children:each>
+			</ul>
+		</r:find>
+	</nav>
+</header>

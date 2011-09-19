@@ -1,0 +1,6 @@
+- if page_part.photo.file?
+	.row
+		== Delete #{page_part.photo.original_filename}?
+		= check_box_tag "page[parts_attributes][#{page_part_counter}][delete]", :value => true
+.row
+	= file_field_tag "page[parts_attributes][#{page_part_counter}][photo]", :value => page_part.photo.original_filename

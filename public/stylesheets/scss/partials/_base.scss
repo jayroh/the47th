@@ -1,0 +1,16 @@
+body, 
+select, 
+input, 
+textarea { color: $font-color; }
+
+a:link,
+a:active,
+a:visited { color: $link-color; }
+a:hover   { 
+  color: $link-color; 
+  border-bottom: dotted 1px $link-color;  
+
+  img {
+    border: none;
+  }
+}

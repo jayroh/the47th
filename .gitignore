@@ -1,0 +1,9 @@
+.sass-cache
+.DS_Store
+tmp/restart.txt
+tmp/cache/*
+config/database.yml
+tmp/sass-cache
+public/assets
+public/system
+log/*

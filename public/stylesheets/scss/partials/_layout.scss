@@ -1,0 +1,17 @@
+body { 
+  background:   $background-color url(/images/the47th/bg.jpg) top left repeat;
+  font-family:  $base-font-family;
+  font-weight:  normal;
+  text-align:   $base-alignment; 
+}
+#container { @include container; }
+#container {
+  text-align: left;
+  background: #fff;
+  // background: #fff url(/images/the47th/16_col.png) top left repeat-y;
+}
+
+#main {
+  position: relative;
+  @include clearfix;
+}
