@@ -6,4 +6,5 @@ config/database.yml
 tmp/sass-cache
 public/assets
 public/system
+.rvmrc
 log/*

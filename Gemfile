@@ -7,7 +7,7 @@ gem "radiant", '1.0.0.rc3'
 gem "sass", '3.1.2'
 gem "compass", '0.11.1'
 gem "compass-susy-plugin", '0.9'
-# gem "radiant-page_factory-extension", :path => "/Users/joel/Gems/radiant-page_factory-extension", :require => 'page_factory'
+gem "radiant-page_factory-extension", '2.0', :git => "git://github.com/jayroh/radiant-page_factory-extension.git", :branch => "2.0"
 
 # alternatively, in development
 # gem 'radiant', :path => '/path/to/radiant/root'

@@ -1,3 +1,10 @@
+GIT
+  remote: git://github.com/jayroh/radiant-page_factory-extension.git
+  revision: ece71dc3f7de588b1872610b93951174628f7eaf
+  branch: 2.0
+  specs:
+    radiant-page_factory-extension (2.0)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -143,5 +150,6 @@ DEPENDENCIES
   compass-susy-plugin (= 0.9)
   mysql (~> 2.8.1)
   radiant (= 1.0.0.rc3)
+  radiant-page_factory-extension (= 2.0)!
   sass (= 3.1.2)
   wirble
