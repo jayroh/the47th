@@ -1,94 +1,165 @@
-/*
-Syntax error: Undefined mixin 'susy'.
-        on line 42 of /Users/joel/Sites/the47th/public/stylesheets/scss/screen.scss, in `susy'
-        from line 42 of /Users/joel/Sites/the47th/public/stylesheets/scss/screen.scss
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent; }
 
-37: $gutter-width: 		2em;
-38: $side-gutter-width: 	$gutter-width / 2;
-39: 
-40: // Don't move this @import above the GRID and FONT-SIZE variables.
-41: @import "susy/susy";
-42: @include susy;
-43: 
-44: @import "partials/boilerplate";
-45: @import "partials/base";
-46: @import "partials/font-face";
-47: @import "partials/layout";
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
 
-Backtrace:
-/Users/joel/Sites/the47th/public/stylesheets/scss/screen.scss:42:in `susy'
-/Users/joel/Sites/the47th/public/stylesheets/scss/screen.scss:42
-/Users/joel/Developer/.rvm/gems/ree-1.8.7-2010.02@the47th2/gems/sass-3.1.2/lib/sass/../sass/tree/visitors/perform.rb:169:in `visit_mixin'
-/Users/joel/Developer/.rvm/gems/ree-1.8.7-2010.02@the47th2/gems/sass-3.1.2/lib/sass/../sass/tree/visitors/base.rb:37:in `send'
-/Users/joel/Developer/.rvm/gems/ree-1.8.7-2010.02@the47th2/gems/sass-3.1.2/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-/Users/joel/Developer/.rvm/gems/ree-1.8.7-2010.02@the47th2/gems/sass-3.1.2/lib/sass/../sass/tree/visitors/perform.rb:18:in `visit'
-/Users/joel/Developer/.rvm/gems/ree-1.8.7-2010.02@the47th2/gems/sass-3.1.2/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
-/Users/joel/Developer/.rvm/gems/ree-1.8.7-2010.02@the47th2/gems/sass-3.1.2/lib/sass/../sass/tree/visitors/base.rb:53:in `map'
-/Users/joel/Developer/.rvm/gems/ree-1.8.7-2010.02@the47th2/gems/sass-3.1.2/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
-/Users/joel/Developer/.rvm/gems/ree-1.8.7-2010.02@the47th2/gems/sass-3.1.2/lib/sass/../sass/tree/visitors/perform.rb:27:in `visit_children'
-/Users/joel/Developer/.rvm/gems/ree-1.8.7-2010.02@the47th2/gems/sass-3.1.2/lib/sass/../sass/tree/visitors/perform.rb:39:in `with_environment'
-/Users/joel/Developer/.rvm/gems/ree-1.8.7-2010.02@the47th2/gems/sass-3.1.2/lib/sass/../sass/tree/visitors/perform.rb:26:in `visit_children'
-/Users/joel/Developer/.rvm/gems/ree-1.8.7-2010.02@the47th2/gems/sass-3.1.2/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-/Users/joel/Developer/.rvm/gems/ree-1.8.7-2010.02@the47th2/gems/sass-3.1.2/lib/sass/../sass/tree/visitors/perform.rb:47:in `visit_root'
-/Users/joel/Developer/.rvm/gems/ree-1.8.7-2010.02@the47th2/gems/sass-3.1.2/lib/sass/../sass/tree/visitors/base.rb:37:in `send'
-/Users/joel/Developer/.rvm/gems/ree-1.8.7-2010.02@the47th2/gems/sass-3.1.2/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-/Users/joel/Developer/.rvm/gems/ree-1.8.7-2010.02@the47th2/gems/sass-3.1.2/lib/sass/../sass/tree/visitors/perform.rb:18:in `visit'
-/Users/joel/Developer/.rvm/gems/ree-1.8.7-2010.02@the47th2/gems/sass-3.1.2/lib/sass/../sass/tree/visitors/perform.rb:7:in `send'
-/Users/joel/Developer/.rvm/gems/ree-1.8.7-2010.02@the47th2/gems/sass-3.1.2/lib/sass/../sass/tree/visitors/perform.rb:7:in `visit'
-/Users/joel/Developer/.rvm/gems/ree-1.8.7-2010.02@the47th2/gems/sass-3.1.2/lib/sass/../sass/tree/root_node.rb:20:in `render'
-/Users/joel/Developer/.rvm/gems/ree-1.8.7-2010.02@the47th2/gems/sass-3.1.2/lib/sass/../sass/engine.rb:291:in `_render'
-/Users/joel/Developer/.rvm/gems/ree-1.8.7-2010.02@the47th2/gems/sass-3.1.2/lib/sass/../sass/engine.rb:239:in `render'
-/Users/joel/Developer/.rvm/gems/ree-1.8.7-2010.02@the47th2/gems/sass-3.1.2/lib/sass/../sass/util.rb:298:in `silence_sass_warnings'
-/Users/joel/Developer/.rvm/gems/ree-1.8.7-2010.02@the47th2/gems/sass-3.1.2/lib/sass/../sass/engine.rb:239:in `render'
-/Users/joel/Developer/.rvm/gems/ree-1.8.7-2010.02@the47th2/gems/sass-3.1.2/rails/../lib/sass/plugin/compiler.rb:319:in `update_stylesheet'
-/Users/joel/Developer/.rvm/gems/ree-1.8.7-2010.02@the47th2/gems/sass-3.1.2/rails/../lib/sass/plugin/compiler.rb:181:in `update_stylesheets'
-/Users/joel/Developer/.rvm/gems/ree-1.8.7-2010.02@the47th2/gems/sass-3.1.2/rails/../lib/sass/plugin/compiler.rb:175:in `each'
-/Users/joel/Developer/.rvm/gems/ree-1.8.7-2010.02@the47th2/gems/sass-3.1.2/rails/../lib/sass/plugin/compiler.rb:175:in `update_stylesheets'
-/Users/joel/Developer/.rvm/gems/ree-1.8.7-2010.02@the47th2/gems/sass-3.1.2/rails/../lib/sass/plugin/compiler.rb:173:in `each'
-/Users/joel/Developer/.rvm/gems/ree-1.8.7-2010.02@the47th2/gems/sass-3.1.2/rails/../lib/sass/plugin/compiler.rb:173:in `update_stylesheets'
-/Users/joel/Developer/.rvm/gems/ree-1.8.7-2010.02@the47th2/gems/sass-3.1.2/rails/../lib/sass/plugin.rb:81:in `update_stylesheets'
-/Users/joel/Developer/.rvm/gems/ree-1.8.7-2010.02@the47th2/gems/sass-3.1.2/rails/../lib/sass/plugin.rb:54:in `check_for_updates'
-/Users/joel/Developer/.rvm/gems/ree-1.8.7-2010.02@the47th2/gems/sass-3.1.2/rails/../lib/sass/plugin/rack.rb:51:in `call'
-/Users/joel/Developer/.rvm/gems/ree-1.8.7-2010.02@the47th2/gems/rack-cache-1.0.3/lib/rack/cache/context.rb:132:in `forward'
-/Users/joel/Developer/.rvm/gems/ree-1.8.7-2010.02@the47th2/gems/rack-cache-1.0.3/lib/rack/cache/context.rb:203:in `validate'
-/Users/joel/Developer/.rvm/gems/ree-1.8.7-2010.02@the47th2/gems/rack-cache-1.0.3/lib/rack/cache/context.rb:177:in `lookup'
-/Users/joel/Developer/.rvm/gems/ree-1.8.7-2010.02@the47th2/gems/rack-cache-1.0.3/lib/rack/cache/context.rb:65:in `call!'
-/Users/joel/Developer/.rvm/gems/ree-1.8.7-2010.02@the47th2/gems/rack-cache-1.0.3/lib/rack/cache/context.rb:50:in `call'
-/Users/joel/Developer/.rvm/gems/ree-1.8.7-2010.02@the47th2/gems/actionpack-2.3.14/lib/action_controller/string_coercion.rb:25:in `call'
-/Users/joel/Developer/.rvm/gems/ree-1.8.7-2010.02@the47th2/gems/rack-1.1.2/lib/rack/head.rb:9:in `call'
-/Users/joel/Developer/.rvm/gems/ree-1.8.7-2010.02@the47th2/gems/rack-1.1.2/lib/rack/methodoverride.rb:24:in `call'
-/Users/joel/Developer/.rvm/gems/ree-1.8.7-2010.02@the47th2/gems/actionpack-2.3.14/lib/action_controller/params_parser.rb:15:in `call'
-/Users/joel/Developer/.rvm/gems/ree-1.8.7-2010.02@the47th2/gems/actionpack-2.3.14/lib/action_controller/session/cookie_store.rb:99:in `call'
-/Users/joel/Developer/.rvm/gems/ree-1.8.7-2010.02@the47th2/gems/actionpack-2.3.14/lib/action_controller/failsafe.rb:26:in `call'
-/Users/joel/Developer/.rvm/gems/ree-1.8.7-2010.02@the47th2/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
-/Users/joel/Developer/.rvm/gems/ree-1.8.7-2010.02@the47th2/gems/rack-1.1.2/lib/rack/lock.rb:11:in `synchronize'
-/Users/joel/Developer/.rvm/gems/ree-1.8.7-2010.02@the47th2/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
-/Users/joel/Developer/.rvm/gems/ree-1.8.7-2010.02@the47th2/gems/actionpack-2.3.14/lib/action_controller/dispatcher.rb:114:in `call'
-/Users/joel/Developer/.rvm/gems/ree-1.8.7-2010.02@the47th2/gems/actionpack-2.3.14/lib/action_controller/reloader.rb:34:in `run'
-/Users/joel/Developer/.rvm/gems/ree-1.8.7-2010.02@the47th2/gems/actionpack-2.3.14/lib/action_controller/dispatcher.rb:108:in `call'
-/Users/joel/Developer/.rvm/gems/ree-1.8.7-2010.02@the47th2/gems/rails-2.3.14/lib/rails/rack/static.rb:31:in `call'
-/Users/joel/Developer/.rvm/gems/ree-1.8.7-2010.02@the47th2/gems/rack-1.1.2/lib/rack/urlmap.rb:47:in `call'
-/Users/joel/Developer/.rvm/gems/ree-1.8.7-2010.02@the47th2/gems/rack-1.1.2/lib/rack/urlmap.rb:41:in `each'
-/Users/joel/Developer/.rvm/gems/ree-1.8.7-2010.02@the47th2/gems/rack-1.1.2/lib/rack/urlmap.rb:41:in `call'
-/Users/joel/Developer/.rvm/gems/ree-1.8.7-2010.02@the47th2/gems/rails-2.3.14/lib/rails/rack/log_tailer.rb:17:in `call'
-/Users/joel/Developer/.rvm/gems/ree-1.8.7-2010.02@the47th2/gems/rack-1.1.2/lib/rack/content_length.rb:13:in `call'
-/Users/joel/Developer/.rvm/gems/ree-1.8.7-2010.02@the47th2/gems/rack-1.1.2/lib/rack/handler/webrick.rb:48:in `service'
-/Users/joel/Developer/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
-/Users/joel/Developer/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
-/Users/joel/Developer/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
-/Users/joel/Developer/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:162:in `start'
-/Users/joel/Developer/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
-/Users/joel/Developer/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:95:in `start'
-/Users/joel/Developer/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:92:in `each'
-/Users/joel/Developer/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:92:in `start'
-/Users/joel/Developer/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:23:in `start'
-/Users/joel/Developer/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:82:in `start'
-/Users/joel/Developer/.rvm/gems/ree-1.8.7-2010.02@the47th2/gems/rack-1.1.2/lib/rack/handler/webrick.rb:14:in `run'
-/Users/joel/Developer/.rvm/gems/ree-1.8.7-2010.02@the47th2/gems/rails-2.3.14/lib/commands/server.rb:111
-script/server:3:in `require'
-script/server:3
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Undefined mixin 'susy'.\A         on line 42 of /Users/joel/Sites/the47th/public/stylesheets/scss/screen.scss, in `susy'\A         from line 42 of /Users/joel/Sites/the47th/public/stylesheets/scss/screen.scss\A \A 37: $gutter-width: 		2em;\A 38: $side-gutter-width: 	$gutter-width / 2;\A 39: \A 40: // Don't move this @import above the GRID and FONT-SIZE variables.\A 41: @import \"susy/susy\";\A 42: @include susy;\A 43: \A 44: @import \"partials/boilerplate\";\A 45: @import \"partials/base\";\A 46: @import \"partials/font-face\";\A 47: @import \"partials/layout\";"; }
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+
+a { margin: 0; padding: 0; font-size: 100%; vertical-align: baseline; background: transparent; }
+
+ins { background-color: #ff9; color: #000; text-decoration: none; }
+
+mark { background-color: #ff9; color: #000; font-style: italic; font-weight: bold; }
+
+del { text-decoration: line-through; }
+
+abbr[title], dfn[title] { border-bottom: 1px dotted; cursor: help; }
+
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+
+input, select { vertical-align: middle; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+h1, h2, h3, h4, h5, h6 { font-weight: bold; }
+
+html { overflow-y: scroll; }
+
+a:hover, a:active { outline: none; }
+
+ol { list-style-type: decimal; }
+
+nav ul { list-style: none; }
+
+nav ul, nav li { margin: 0; }
+
+strong, th { font-weight: bold; }
+
+td, td img { vertical-align: top; }
+
+sub { vertical-align: sub; font-size: smaller; }
+
+sup { vertical-align: super; font-size: smaller; }
+
+pre { padding: 15px; white-space: pre; /* CSS2 */ white-space: pre-wrap; /* CSS 2.1 */ white-space: pre-line; /* CSS 3 (and 2.1 as well, actually) */ word-wrap: break-word; /* IE */ }
+
+textarea { overflow: auto; }
+
+.ie6 legend, .ie7 legend { margin-left: -7px; }
+
+/* thnx ivannikolic! */
+input[type="radio"] { vertical-align: text-bottom; }
+
+input[type="checkbox"] { vertical-align: bottom; }
+
+.ie7 input[type="checkbox"] { vertical-align: baseline; }
+
+.ie6 input { vertical-align: text-bottom; }
+
+label, input[type=button], input[type=submit], button { cursor: pointer; }
+
+button, input, select, textarea { margin: 0; }
+
+button { width: auto; overflow: visible; }
+
+input:invalid, textarea:invalid { border-radius: 1px; -moz-box-shadow: red 0px 0px 5px; -webkit-box-shadow: red 0px 0px 5px; -o-box-shadow: red 0px 0px 5px; box-shadow: red 0px 0px 5px; }
+
+.no-boxshadow input:invalid, .no-boxshadow textarea:invalid { background-color: #f0dddd; }
+
+::-moz-selection { background: #8d7c79; color: #4c3332; text-shadow: none; }
+
+::selection { background: #8d7c79; color: #4c3332; text-shadow: none; }
+
+a:link { -webkit-tap-highlight-color: #8d7c79; }
+
+.ie7 img { -ms-interpolation-mode: bicubic; }
+
+.ir, header[role="banner"] hgroup h1 a { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }
+
+/* image replacement */
+.hidden { display: none; visibility: hidden; }
+
+.visuallyhidden { position: absolute !important; clip: rect(1px 1px 1px 1px); /* IE6, IE7 */ clip: rect(1px, 1px, 1px, 1px); }
+
+.invisible { visibility: hidden; }
+
+body, select, input, textarea { color: #503c38; }
+
+a:link, a:active, a:visited { color: #ff0078; }
+
+a:hover { color: #ff0078; border-bottom: dotted 1px #ff0078; }
+a:hover img { border: none; }
+
+@font-face { font-family: "QuicksandBold"; src: url(/stylesheets/fonts/quicksand/Quicksand_Bold-webfont.eot); src: url(/stylesheets/fonts/quicksand/Quicksand_Bold-webfont.eot?iefix) format('eot'), url(/stylesheets/fonts/quicksand/Quicksand_Bold-webfont.woff) format('woff'), url(/stylesheets/fonts/quicksand/Quicksand_Bold-webfont.ttf) format('truetype'), url(/stylesheets/fonts/quicksand/Quicksand_Bold-webfont.svg) format('svg'); }
+
+@font-face { font-family: "QuicksandBook"; src: url(/stylesheets/fonts/quicksand/Quicksand_Book-webfont.eot); src: url(/stylesheets/fonts/quicksand/Quicksand_Book-webfont.eot?iefix) format('eot'), url(/stylesheets/fonts/quicksand/Quicksand_Book-webfont.woff) format('woff'), url(/stylesheets/fonts/quicksand/Quicksand_Book-webfont.ttf) format('truetype'), url(/stylesheets/fonts/quicksand/Quicksand_Book-webfont.svg) format('svg'); }
+
+@font-face { font-family: "VollkornBoldItalic"; src: url(/stylesheets/fonts/vollkorn/Vollkorn-BoldItalic-webfont.eot); src: url(/stylesheets/fonts/vollkorn/Vollkorn-BoldItalic-webfont.eot?iefix) format('eot'), url(/stylesheets/fonts/vollkorn/Vollkorn-BoldItalic-webfont.woff) format('woff'), url(/stylesheets/fonts/vollkorn/Vollkorn-BoldItalic-webfont.ttf) format('truetype'), url(/stylesheets/fonts/vollkorn/Vollkorn-BoldItalic-webfont.svg) format('svg'); }
+
+@font-face { font-family: "VollkornBold"; src: url(/stylesheets/fonts/vollkorn/Vollkorn-Bold-webfont.eot); src: url(/stylesheets/fonts/vollkorn/Vollkorn-Bold-webfont.eot?iefix) format('eot'), url(/stylesheets/fonts/vollkorn/Vollkorn-Bold-webfont.woff) format('woff'), url(/stylesheets/fonts/vollkorn/Vollkorn-Bold-webfont.ttf) format('truetype'), url(/stylesheets/fonts/vollkorn/Vollkorn-Bold-webfont.svg) format('svg'); }
+
+@font-face { font-family: "VollkornItalic"; src: url(/stylesheets/fonts/vollkorn/Vollkorn-Italic-webfont.eot); src: url(/stylesheets/fonts/vollkorn/Vollkorn-Italic-webfont.eot?iefix) format('eot'), url(/stylesheets/fonts/vollkorn/Vollkorn-Italic-webfont.woff) format('woff'), url(/stylesheets/fonts/vollkorn/Vollkorn-Italic-webfont.ttf) format('truetype'), url(/stylesheets/fonts/vollkorn/Vollkorn-Italic-webfont.svg) format('svg'); }
+
+body { background: white url(/images/the47th/bg.jpg) top left repeat; font-family: Georgia, Palatino, Palatino Linotype, Times, Times New Roman, serif; font-weight: normal; text-align: center; }
+
+#container { *zoom: 1; margin: auto; width: 96em; max-width: 100%; }
+#container:after { content: "\0020"; display: block; height: 0; clear: both; overflow: hidden; visibility: hidden; }
+
+#container { text-align: left; background: #fff; }
+
+#main { position: relative; overflow: hidden; *zoom: 1; }
+
+header[role="banner"] { padding-top: 2em; padding-bottom: 10.5em; position: relative; overflow: hidden; *zoom: 1; }
+header[role="banner"] hgroup h1 { float: left; display: inline; float: left; width: 35.417%; margin-right: 2.083%; margin-left: 1.042%; }
+header[role="banner"] hgroup h1, header[role="banner"] hgroup a { height: 97px; }
+header[role="banner"] hgroup h1 a { width: 217px; background: transparent url(/images/the47th/logo.jpg) top left no-repeat; }
+header[role="banner"] hgroup h1 a:hover { border-bottom: none; }
+header[role="banner"] hgroup h2 { color: #d0ba95; float: left; font-family: "VollkornBoldItalic", Georgia, Palatino, "Palatino Linotype", Times, "Times New Roman", serif; font-size: 2em; font-weight: normal; padding-top: 71px; display: inline; float: left; width: 60.417%; margin-right: 2.083%; display: inline; float: right; margin-right: 1.042%; #margin-left: -2em; }
+header[role="banner"] nav ul { display: none; position: absolute; top: 2em; left: 38.542%; display: inline; float: left; width: 60.417%; margin-right: 2.083%; display: inline; float: right; margin-right: 1.042%; #margin-left: -2em; }
+header[role="banner"] nav ul li { float: left; display: block; display: inline; float: left; width: 27.586%; margin-right: 3.448%; }
+header[role="banner"] nav ul li a { display: block; color: #4c3332; font-family: "QuicksandBold", Arial, Calibri, Tahoma, "Trebuchet MS", sans-serif; font-size: 1.1em; text-transform: uppercase; text-decoration: none; white-space: nowrap; }
+header[role="banner"] nav ul li a:hover { border: none; }
+
+body#project #main article { overflow: hidden; *zoom: 1; position: relative; }
+body#project #main article nav { clear: both; margin-left: 1.042%; margin-right: 1.042%; border-top: solid 1px #eeeaea; margin-top: 30px; margin-bottom: 38px; }
+body#project #main article nav a { float: right; text-indent: -119988px; overflow: hidden; text-align: left; background-image: url('/images/the47th/projects/all_projects.png?1300032426'); background-repeat: no-repeat; background-position: "top" "left"; width: 103px; height: 22px; margin-top: -11px; }
+body#project #main article nav a:hover { border-bottom: none; }
+body#project #main article section#info { display: inline; float: left; width: 22.917%; margin-right: 2.083%; margin-left: 1.042%; }
+body#project #main article section#info header hgroup h1 { font-family: "QuicksandBook", Arial, Calibri, Tahoma, "Trebuchet MS", sans-serif; font-size: 2.6em; font-weight: normal; letter-spacing: 4px; line-height: 1em; padding-bottom: 10px; text-transform: uppercase; }
+body#project #main article section#info header hgroup h2 { color: #796d59; font-weight: normal; font-family: "VollkornItalic", Georgia, Palatino, "Palatino Linotype", Times, "Times New Roman", serif; font-size: 1.7em; margin-bottom: 24px; }
+body#project #main article section#info p { line-height: 1.5em; font-size: 1.4em; }
+body#project #main article section#info ul { margin-top: 20px; }
+body#project #main article section#info ul li { font-family: "QuicksandBold", Arial, Calibri, Tahoma, "Trebuchet MS", sans-serif; display: block; width: 32%; float: left; border-right: solid 1px #e8dac6; text-align: center; height: 20px; padding-top: 40px; margin-top: 10px; }
+body#project #main article section#images { display: inline; float: left; width: 72.917%; margin-right: 2.083%; display: inline; float: right; margin-right: 1.042%; #margin-left: -2em; background: #eee; padding-bottom: 12px; }
+body#project #main article section#images img { margin-top: 12px; margin-left: 12px; max-width: 676px; display: block; float: left; }
+body#project #main article section#images aside { background: transparent url("/images/the47th/projects/side_note.gif") top left no-repeat; clear: both; display: block; float: left; font-size: 1.4em; left: 0; line-height: 1.6em; margin-left: -243px; margin-top: 12px; padding-top: 70px; padding-right: 19px; width: 224px; }
+body#project section#related { margin: 55px 0; display: inline; float: left; width: 72.917%; margin-right: 2.083%; display: inline; float: right; margin-right: 1.042%; #margin-left: -2em; clear: both; }
+body#project section#related header { display: inline; float: left; width: 22.857%; margin-right: 2.857%; padding-right: 8.571%; }
+body#project section#related header h1 { border-right: solid 1px #e6dac7; font-family: "QuicksandBold", Arial, Calibri, Tahoma, "Trebuchet MS", sans-serif; font-weight: normal; font-size: 1.8em; letter-spacing: 1px; line-height: 1.3em; text-transform: uppercase; width: 100%; }
+body#project section#related ul { display: inline; float: left; width: 65.714%; margin-right: 2.857%; display: inline; float: right; margin-right: 0; #margin-left: -2em; list-style: none; }
+body#project section#related ul li { display: inline; float: left; width: 47.826%; margin-right: 4.348%; }
+body#project section#related ul li:last-child { display: inline; float: right; margin-right: 0; #margin-left: -2em; }
+body#project section#related ul li a:link, body#project section#related ul li a:visited, body#project section#related ul li a:hover, body#project section#related ul li a:active { display: block; color: #503C38; text-decoration: none; }
+body#project section#related ul li h2 { font-family: "VollkornBold", Georgia, Palatino, "Palatino Linotype", Times, "Times New Roman", serif; font-weight: normal; font-size: 1.4em; }
+body#project section#related ul li p { font-style: italic; font-size: 1.3em; }
+
+/* Media queries for responsive design These follow after primary styles so they will successfully override.  */
+@media all and (orientation:portrait) { /* Style adjustments for portrait mode goes here */ }
+@media all and (orientation:landscape) { /* Style adjustments for landscape mode goes here */ }
+/* Grade-A Mobile Browsers (Opera Mobile, iPhone Safari, Android Chrome)   Consider this: www.cloudfour.com/css-media-query-for-mobile-is-fools-gold/ */
+@media screen and (max-device-width: 480px) { /* Uncomment if you don't want iOS and WinMobile to mobile-optimize the text for you j.mp/textsizeadjust  html { -webkit-text-size-adjust:none; -ms-text-size-adjust:none; } */ }
+/*  print styles inlined to avoid required HTTP connection www.phpied.com/delay-loading-your-print-css/  */
+@media print { * { background: transparent !important; color: #444 !important; text-shadow: none !important; }
+  a, a:visited { color: #444 !important; text-decoration: underline; }
+  a:after { content: " (" attr(href) ")"; }
+  abbr:after { content: " (" attr(title) ")"; }
+  .ir a:after, header[role="banner"] hgroup h1 a a:after { content: ""; }
+  /* Don't show links for images */
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  thead { display: table-header-group; }
+  /* css-discuss.incutio.com/wiki/Printing_Tables */
+  tr, img { page-break-inside: avoid; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3 { page-break-after: avoid; } }

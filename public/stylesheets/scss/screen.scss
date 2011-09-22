@@ -1,6 +1,11 @@
-@import "compass/utilities/general/clearfix";
-@import "compass/utilities/text/nowrap";
-@import "compass/css3";
+@import "compass";
+@import "susy";
+
+// Grid
+$total-cols             : 16;
+$col-width              : 4em;
+$gutter-width           : 2em;
+$side-gutter-width      :	$gutter-width / 2;
 
 // Fixed Font
 $fixed-font-family:       Monaco, 'Andale Mono', 'Lucida Console', monospace !default;
@@ -31,15 +36,6 @@ $quiet-color:             #d0ba95 !default;
 $header-color:            $font-color - #222 !default;
 $background-color:        #fff !default;
 
-// Grid
-$total-cols: 		16;
-$col-width: 		4em;
-$gutter-width: 		2em;
-$side-gutter-width: 	$gutter-width / 2;
-
-// Don't move this @import above the GRID and FONT-SIZE variables.
-@import "susy/susy";
-@include susy;
 
 @import "partials/boilerplate";
 @import "partials/base";
