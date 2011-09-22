@@ -108,6 +108,7 @@ GEM
     radiant-exporter-extension (1.0.1)
     radiant-markdown_filter-extension (1.0.1)
       bluecloth (~> 2.1.0)
+    radiant-settings-extension (1.1.1)
     radiant-sheets-extension (1.0.0)
       coffee-script (~> 2.2.0)
       sass (~> 3.1.2)
@@ -151,5 +152,6 @@ DEPENDENCIES
   mysql (~> 2.8.1)
   radiant (= 1.0.0.rc3)
   radiant-page_factory-extension (= 2.0)!
+  radiant-settings-extension (= 1.1.1)
   sass (= 3.1.2)
   wirble

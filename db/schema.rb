@@ -28,8 +28,9 @@ ActiveRecord::Schema.define(:version => 20100810151922) do
   end
 
   create_table "config", :force => true do |t|
-    t.string "key",   :limit => 40, :default => "", :null => false
-    t.string "value",               :default => ""
+    t.string "key",         :limit => 40, :default => "", :null => false
+    t.string "value",                     :default => ""
+    t.text   "description"
   end
 
   add_index "config", ["key"], :name => "key", :unique => true
@@ -41,14 +42,15 @@ ActiveRecord::Schema.define(:version => 20100810151922) do
   end
 
   create_table "layouts", :force => true do |t|
-    t.string   "name",          :limit => 100
+    t.string   "name",                 :limit => 100
     t.text     "content"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "created_by_id"
     t.integer  "updated_by_id"
-    t.string   "content_type",  :limit => 40
-    t.integer  "lock_version",                 :default => 0
+    t.string   "content_type",         :limit => 40
+    t.integer  "lock_version",                        :default => 0
+    t.boolean  "file_system_resource"
   end
 
   create_table "page_attachments", :force => true do |t|
@@ -89,6 +91,7 @@ ActiveRecord::Schema.define(:version => 20100810151922) do
     t.integer  "updated_by_id"
     t.boolean  "virtual",                      :default => false, :null => false
     t.integer  "lock_version",                 :default => 0
+    t.string   "page_factory"
   end
 
   add_index "pages", ["class_name"], :name => "pages_class_name"
@@ -106,14 +109,15 @@ ActiveRecord::Schema.define(:version => 20100810151922) do
   add_index "sessions", ["updated_at"], :name => "index_sessions_on_updated_at"
 
   create_table "snippets", :force => true do |t|
-    t.string   "name",          :limit => 100, :default => "", :null => false
-    t.string   "filter_id",     :limit => 25
+    t.string   "name",                 :limit => 100, :default => "", :null => false
+    t.string   "filter_id",            :limit => 25
     t.text     "content"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "created_by_id"
     t.integer  "updated_by_id"
-    t.integer  "lock_version",                 :default => 0
+    t.integer  "lock_version",                        :default => 0
+    t.boolean  "file_system_resource"
   end
 
   add_index "snippets", ["name"], :name => "name", :unique => true
