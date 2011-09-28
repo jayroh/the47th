@@ -1,6 +1,6 @@
 // when selecting text, use the following bg and fg colors
 $selection-background: #8d7c79;
-$selection-color:      #4c3332;
+$selection-color:      #ffffff;
 
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -144,14 +144,6 @@ a:link { -webkit-tap-highlight-color: $selection-background; }
 }
 .invisible { visibility: hidden; }
 
-// no clearfix class - no need.
-// *************************************************
-// # at the top of your main/base scss file:
-//   @import "compass/utilities/general/clearfix"
-// *************************************************
-// # then inside of your selectors
-// #main-div-with-floated-children {
-//   ... everything ...
-//   @import clearfix
-// }
-// *************************************************
+body {
+  font-size: 62.5%;
+}

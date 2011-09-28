@@ -1,0 +1,49 @@
+#container > footer {
+  @include clearfix;
+  padding: 40px 0;
+  clear: both;
+
+  h1, p { font-size: 16px; }
+  h1 {
+    font-family: $vollkornbolditalic-stack;
+    color: #796d59;
+    font-weight: normal;
+    a, a:hover {
+      color: #796d59;
+      text-decoration: none;
+      border: none;
+    }
+  }
+  p {
+    font-family: $vollkornitalic-stack;
+    color: #796d59;
+    a { color: #ff0078; border: none; text-decoration: none; }
+    a:hover { border-bottom: dotted 1px #ff0078; }
+ 
+  }
+  .vcard {
+    @include columns(4);
+    @include alpha;
+  }
+  .omg_internets {
+    @include columns(8);
+  }
+  nav {
+    @include columns(4);
+    @include omega;
+
+    a {
+      border: none; 
+      color: #4c3332;
+      display: block;
+      font-family: $quicksandbold-stack;
+      font-size: 1.1em;
+      padding: 4px 0;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+    a:hover { 
+      color: #ff0078;
+    }
+  }
+}

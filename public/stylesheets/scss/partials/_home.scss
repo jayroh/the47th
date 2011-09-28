@@ -1,0 +1,170 @@
+#home {
+  overflow-x: hidden;
+}
+
+#our-work {
+  @include nowrap;
+
+  figure {
+    display: inline-block;
+    position: relative;
+    width: 845px;
+    &:last-child { width: 792px; }
+
+    img {
+      @include box-shadow(gray 0px 0px 8px);
+    }
+
+    figcaption {
+      background: url("/images/the47th/home/figcaption_arrow.png") no-repeat scroll 27px center #D0BA95;
+      position: absolute; 
+      left: 0px;
+      letter-spacing: 4px;
+      opacity: 0;
+      top: 44%;
+      font-family: $quicksandbold-stack;
+      font-size: 27px;
+
+      @include transition-property(opacity);
+      @include transition-duration(.3s);
+      @include transition-timing-function(ease-in);
+      
+    }
+
+    &:hover figcaption {
+      opacity: .95;
+    }
+
+    a {
+      color: #FFFFFF;
+      display: block;
+      padding: 18px 30px 12px 112px;
+      text-decoration: none;
+      text-transform: uppercase;
+
+      &:before {
+        background: none repeat scroll 0 0 white;
+        content: "";
+        display: block;
+        height: 48px;
+        left: 94px;
+        opacity: 0.4;
+        overflow: hidden;
+        position: absolute;
+        width: 1px;
+      }
+    }
+    a:hover { 
+      text-decoration: none; 
+      border: none;
+    }
+    small {
+      clear: both;
+      display: block; 
+      font-family: $vollkornitalic-stack;
+      font-size: 17px;
+      letter-spacing: 0;
+      text-transform: none;
+    }
+  }
+}
+
+#slider {
+  @include full;
+  height: 47px;
+  margin-top: 30px;
+  position: relative;
+  background: #fff;
+
+  &:after {
+    content: '';
+    width: 100%;
+    height: 1px;
+    overflow: hidden;
+    background: #cfcfcf;
+    position: absolute;
+    top: 24px;
+    z-index: 10;
+  }
+
+  .grab { 
+    cursor: move; 
+    z-index: 20; 
+    background: transparent url('/images/the47th/home/drag.png') top left no-repeat;
+    width: 74px;
+    height: 47px;
+  }
+  .grab:active { cursor: -moz-grabbing; }
+}
+
+#twitter {
+  margin-top: 52px;
+
+  h1 {
+    @include full;
+    background: url("/images/the47th/home/bg_twitter_h1.gif") no-repeat scroll 216px 2px white;
+    color: #4C3836;
+    font-family: $quicksandbold-stack;
+    font-size: 12px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+  h1 a {
+    background: url("/images/the47th/home/bg_twitter_more.gif") no-repeat scroll top left transparent;
+    border-left: solid 10px #fff;
+    float: right;
+    display: block;
+    width: 63px;
+    height: 23px;
+    font-size: 0px;
+    text-indent: -9999px;
+    outline: none !important;
+
+    &:hover {
+      border: none;
+    }
+  }
+}
+
+#tweets {
+  margin-top: 34px;
+
+  ul {
+    list-style: none;
+    position: relative;
+    @include clearfix;
+    padding-bottom: 40px;
+    border-bottom: double 1px #efeaea;
+  }
+
+  cite {
+    @include columns(3);
+    @include alpha;
+    font-family: $quicksandbold-stack;
+    font-size: 18px;
+    font-style: normal;
+    color: #5e5d5d;
+  }
+  blockquote {
+    @include columns(13);
+    @include omega;
+    font-family: $quicksandbook-stack;
+    font-size: 24px;
+
+  }
+  a {
+    color: #1995c9;
+    text-decoration: none;
+
+    &:hover { border-bottom: dotted 1px #1995c9; }
+  }
+  time { 
+    position: absolute; 
+    left: 10px;
+    top: 20px;
+    font-family: $vollkornitalic-stack;
+    font-size: 14px;
+  }
+}

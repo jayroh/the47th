@@ -1,0 +1,121 @@
+<!doctype html> 
+  <!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+  <!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+  <!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+  <!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+  <!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+  <head>
+    <r:snippet name="header-head-tags" />
+  </head>
+  <body id="blog">
+    <div id="container">
+      <r:snippet name="header" />
+      <div id="main">
+        <article>
+          <header>
+            <h1>Lorem Ipsum And Stuff Here</h1>
+          </header>
+          <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh <a href="#">euismod tincidunt ut laoreet</a> dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation.</p>
+            <p>Nullam id dolor id nibh ultricies <a href="#">vehicula ut</a> id elit. Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus.</p>
+            <ul>
+              <li><a href="#" class="dev">Dev</a></li>
+                <li><a href="#" class="tweet">Tweet</a></li>
+                <li><a href="#" class="books">Books</a></li>
+                <li><a href="#" class="design">Design</a></li>
+            </ul>
+            <blockquote>
+              Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Vestibulum id ligula porta felis euismod semper. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur blandit tempus porttitor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.
+            </blockquote>
+            <ol>
+              <li>List item</li>
+              <li>List item</li>
+              <li>List item</li>
+              <li>List item</li>
+            </ol>
+          </div>
+          <footer>
+            <cite>Joel</cite>
+            <time>June 14, 2011</time>
+            <ul class="tags">
+              <li><a href="#" class="dev">Dev</a></li>
+              <li><a href="#" class="tweet">Tweet</a></li>
+              <li><a href="#" class="books">Books</a></li>
+              <li><a href="#" class="design">Design</a></li>
+            </ul>
+          </footer>
+        </article>
+        <article>
+          <header>
+            <h1>Lorem Ipsum And Stuff Here</h1>
+          </header>
+          <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh <a href="#">euismod tincidunt ut laoreet</a> dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation.</p>
+            <p>Nullam id dolor id nibh ultricies <a href="#">vehicula ut</a> id elit. Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus.</p>
+            <ul>
+              <li><a href="#" class="dev">Dev</a></li>
+                <li><a href="#" class="tweet">Tweet</a></li>
+                <li><a href="#" class="books">Books</a></li>
+                <li><a href="#" class="design">Design</a></li>
+            </ul>
+            <blockquote>
+              Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Vestibulum id ligula porta felis euismod semper. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur blandit tempus porttitor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.
+            </blockquote>
+            <ol>
+              <li>List item</li>
+              <li>List item</li>
+              <li>List item</li>
+              <li>List item</li>
+            </ol>
+          </div>
+          <footer>
+            <cite></cite>
+            <time></time>
+            <ul class="tags">
+              <li><a href="#">Dev</a></li>
+              <li><a href="#">Tweet</a></li>
+              <li><a href="#">Books</a></li>
+              <li><a href="#">Design</a></li>
+            </ul>
+          </footer>
+        </article>
+
+        <div class="pagination">
+          <span class="disabled prev_page">« previous posts</span> 
+          <span class="current">1</span> 
+          <a href="/our-thinking/blog/?page=2" rel="next">2</a> 
+          <a href="/our-thinking/blog/?page=3">3</a> 
+          <a href="/our-thinking/blog/?page=4">4</a> 
+          <a href="/our-thinking/blog/?page=5">5</a> 
+          <a href="/our-thinking/blog/?page=6">6</a> 
+          <a href="/our-thinking/blog/?page=7">7</a> 
+          <a href="/our-thinking/blog/?page=8">8</a> 
+          <a href="/our-thinking/blog/?page=9">9</a> 
+          <a href="/our-thinking/blog/?page=10">10</a> 
+          <a href="/our-thinking/blog/?page=2" rel="next" class="next_page">recent posts »</a>
+        </div>
+        
+        <aside>
+          <h2>Search</h2>
+          <form action="search" method="post" accept-charset="utf-8">
+            <input type="search" name="q" value="" />
+          </form>
+          
+          <ul class="follow_the47th">
+            <li>Twitter: <a href="#">@the47th</a></li>
+            <li><a href="#">RSS feed</a></li>
+          </ul>
+
+          <ul class="follow_us">
+            <li>Ann Karash Kimura<a href="#">@emmaopeel</a></li>
+            <li>Joel Oliveira<a href="#">@jayroh</a></li>
+            <li>John Torres<a href="#">@john_torres</a></li>
+          </ul>
+        </aside>
+      </div><!-- close // #main -->
+      <r:snippet name="footer" />
+    </div><!-- close // #container -->
+    <r:snippet name="footer-javascript" />
+    <r:snippet name="footer-google-analytics" />
+  </body>
+</html>

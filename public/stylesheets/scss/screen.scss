@@ -5,7 +5,7 @@
 $total-cols             : 16;
 $col-width              : 4em;
 $gutter-width           : 2em;
-$side-gutter-width      :	$gutter-width / 2;
+$side-gutter-width      : $gutter-width / 2;
 
 // Fixed Font
 $fixed-font-family:       Monaco, 'Andale Mono', 'Lucida Console', monospace !default;
@@ -13,19 +13,20 @@ $fixed-font-size:         62.5% !default;
 $fixed-line-height:       2.2em !default;
 
 // Serif Font
-$serif-font-family: 	    Georgia, Palatino, Palatino Linotype, Times, Times New Roman, serif;
+$serif-font-family: 	  Georgia, Palatino, Palatino Linotype, Times, Times New Roman, serif;
 $serif-font-size:         1em !default;
 $serif-line-height:       1.6em !default;
+$georgia-stack:           $serif-font-family;
 
 // San-Serif Font
-$sans-serif-font-family: 	Tahoma, Arial, Calibri, 'Trebuchet MS', sans-serif !default;
+$sans-serif-font-family:  Tahoma, Arial, Calibri, 'Trebuchet MS', sans-serif !default;
 $sans-serif-font-size:    1em !default;
 $sans-serif-line-height:  1.6em !default;
 
 // Base Setup
 $base-font-family:        $serif-font-family;
-$base-font-size:   	      10px; // needed for 16 column grid
-$base-line-height: 	      18px; // needed for 16 column grid
+$base-font-size:   	  10px; // needed for 16 column grid
+$base-line-height: 	  18px; // needed for 16 column grid
 $base-alignment:          center;
                           
 // Colors                 

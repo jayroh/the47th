@@ -1,0 +1,117 @@
+#blog {
+  article {
+    @include columns(9);
+    @include alpha;
+    @include prefix(3);
+    border-top: solid 1px #efeaea;
+    padding-top: 20px; 
+    padding-bottom: 90px;
+    position: relative;
+
+    .content {
+      font-size: 16px;
+      color: #474747;
+      line-height: 24px;
+    }
+
+    header h1 {
+      color: #5e5d5d;
+      font-family: $quicksandbook-stack;
+      font-size: 24px;
+      font-weight: normal;
+      margin-bottom: 20px;
+      line-height: 30px;
+    }
+
+    footer {
+      @include columns(3, 12);
+      position: absolute;
+      top: 20px;
+      left: 0px;
+
+      cite {
+       color: #5e5d5d;
+       display: block;
+       font-family: $quicksandbold-stack; 
+       font-weight: normal;
+       font-size: 16px;
+       font-style: normal;
+      }
+      time {
+        color: #5e5d5d;
+        font-family: $vollkornitalic-stack;
+        font-style: normal;
+        font-size: 13px;
+        line-height: 20px;
+      }
+      ul {
+        list-style: none;
+        overflow: hidden;
+        margin-top: 17px;
+      }
+      li {
+        display: block;
+        float: left;
+        width: 70px;
+      }
+      ul a {
+        background: #fff url(/images/the47th/blog/tag_sprite.png) top left no-repeat;
+        border-right: solid 1px #e8dac6;
+        color: #432d27;
+        display: inline-block;
+        font-family: $quicksandbold-stack; 
+        font-size: 10px;
+        height: 15px;
+        margin-bottom: 10px;
+        padding-top: 49px;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        width: 69px;
+
+        &:hover { border-bottom: none; }
+        &.dev { background-position: left -128px; }
+        &.books { background-position: left top; }
+        &.tweet { background-position: left -192px; }
+        &.design { background-position: left -64px; }
+      }
+    }
+  }
+
+  .pagination {
+    clear: both;
+  }
+
+  #main { position: relative; }
+  #main > aside {
+    @include columns(3);
+    @include omega;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+
+    h2 {
+      color: #4c3836;
+      font-family: $quicksandbold-stack; 
+      font-size: 12px;
+      font-weight: normal;
+      text-transform: uppercase;
+    }
+    input[type="search"] {
+      @include border-radius(13px);
+      @include box-shadow(gray 1px 1px 1px 1px inset);
+      background: white url(/images/the47th/blog/icon_search.gif) 137px 4px no-repeat;
+      border: none;
+      display: block;
+      height: 22px;
+      line-height: 22px;
+      padding: 0 25px 0 10px;
+      width: 125px;
+
+      .msie & {
+        border: solid 1px gray;
+        background: #ffffff !important;
+      }
+    }
+  }
+}

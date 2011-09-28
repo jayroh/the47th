@@ -1,7 +1,7 @@
 <footer>
   
   <div class="vcard">
-    <p class="fn"><a class="url" href="/">The 47th</a><p>
+    <h1 class="fn"><a class="url" href="http://www.the47th.com/">The 47th</a></h1>
     <p class="adr">
       <span class="street-address">50 Terminal Street</span><br />
       <span class="street-address">4th Floor, Suite 47</span><br />
@@ -9,5 +9,28 @@
       <span class="postal-code">02129</span><br />
     </p>
   </div>
+
+  <section class="omg_internets">
+    <h1>Meanwhile ... on the Internet -</h1>
+    <p>Get friendly with us on <a href="http://twitter.com/the47th">Twitter</a> and <a href="http://www.facebook.com/pages/47th/107693585927946">Facebook</a>. See pictures of things we like on <a href="http://flickr.com">Flickr</a>. Check out our <a href="/blog">blog</a>. Say hello, we love hearing from you, <a href="mailto:hello@the47th.com">hello@the47th.com</a>.</p>
+  </section>
+
+  <nav>
+    <r:find url="/">
+      <ul>
+        <r:children:each>
+          <li class="<r:slug/><r:if_ancestor_or_self> active</r:if_ancestor_or_self>">
+            <r:link />
+          </li>
+        </r:children:each>
+        <li><a href="#">What we’ve done</a></li>
+        <li><a href="#">How we do it</a></li>
+        <li><a href="#">Who we are</a></li>
+        <li><a href="#">What we’re talking about</a></li>
+        <li><a href="#">How to get in touch</a></li>
+        <li><a href="#">Something random</a></li>
+      </ul>
+    </r:find>
+  </nav>
 
 </footer>

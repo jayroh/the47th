@@ -4,14 +4,15 @@ body {
   font-weight:  normal;
   text-align:   $base-alignment; 
 }
-#container { @include container; }
-#container {
-  text-align: left;
+#container { 
   background: #fff;
-  // background: #fff url(/images/the47th/16_col.png) top left repeat-y;
+  @include container;
+  @include susy-grid-background;
+  text-align: left;
+  border-left: solid 20px #ffffff;
+  border-right: solid 20px #ffffff;
 }
 
 #main {
   position: relative;
-  @include clearfix;
 }

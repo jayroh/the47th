@@ -1,0 +1,81 @@
+<!doctype html> 
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+  <head>
+    <r:snippet name="header-head-tags" />
+  </head>
+  <body id="home">
+    <div id="container">
+      <r:snippet name="header" />
+      <div id="main">
+        <div id="our-work">
+          <figure>
+            <img src="/images/the47th/tmp/sample_1.jpg" width="792" height="567" alt="the Ring" />
+            <figcaption>
+              <a href="#">
+                Ring Boxing Club
+                <small>Website</small>
+              </a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="/images/the47th/tmp/sample_1.jpg" width="792" height="567" alt="the Ring" />
+            <figcaption>
+              <a href="#">
+                Ring Boxing Club
+                <small>Website</small>
+              </a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="/images/the47th/tmp/sample_1.jpg" width="792" height="567" alt="the Ring" />
+            <figcaption>
+              <a href="#">
+                Ring Boxing Club
+                <small>Website</small>
+              </a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="/images/the47th/tmp/sample_1.jpg" width="792" height="567" alt="the Ring" />
+            <figcaption>
+              <a href="#">
+                Ring Boxing Club
+                <small>Website</small>
+              </a>
+            </figcaption>
+          </figure>
+        </div>
+        <div id="slider">
+          <div class="grab"></div>
+        </div>
+
+        <section id="twitter">
+        <h1>
+          What We're Talking About
+          <a href="http://twitter.com/#!/list/the47th/team">more</a> 
+        </h1>
+          <div id="tweets"></div>
+        </section>
+
+      </div><!-- close // #main -->
+      <r:snippet name="footer" />
+    </div><!-- close // #container -->
+    <script src="http://twitterjs.googlecode.com/svn/trunk/src/twitter.min.js"></script>
+    <script>
+      getTwitters('tweets', { 
+        id: 'the47th/team', 
+        count: 1,
+        enableLinks: true, 
+        ignoreReplies: true, 
+        clearContents: true,
+        template: '<cite>%user_name%</cite><time><a href="http://twitter.com/%user_screen_name%/statuses/%id_str%/">%time%</a></time><blockquote>%text%</blockquote>'
+      });      
+    </script>
+    <r:snippet name="footer-javascript" />
+    <r:snippet name="footer-google-analytics" />
+  </body>
+</html>
