@@ -16,6 +16,7 @@
             <h1>Lorem Ipsum And Stuff Here</h1>
           </header>
           <div class="content">
+            <p><img src="/images/the47th/tmp/blog_1.jpg" /></p>
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh <a href="#">euismod tincidunt ut laoreet</a> dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation.</p>
             <p>Nullam id dolor id nibh ultricies <a href="#">vehicula ut</a> id elit. Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus.</p>
             <ul>
@@ -102,14 +103,14 @@
           </form>
           
           <ul class="follow_the47th">
-            <li>Twitter: <a href="#">@the47th</a></li>
-            <li><a href="#">RSS feed</a></li>
+            <li class="twitter">Twitter: <a href="#">@the47th</a></li>
+            <li class="rss"><a href="#">RSS feed</a></li>
           </ul>
 
           <ul class="follow_us">
-            <li>Ann Karash Kimura<a href="#">@emmaopeel</a></li>
-            <li>Joel Oliveira<a href="#">@jayroh</a></li>
-            <li>John Torres<a href="#">@john_torres</a></li>
+            <li class="twitter">Ann Karash Kimura<a href="#">@emmaopeel</a></li>
+            <li class="twitter">Joel Oliveira<a href="#">@jayroh</a></li>
+            <li class="twitter">John Torres<a href="#">@john_torres</a></li>
           </ul>
         </aside>
       </div><!-- close // #main -->

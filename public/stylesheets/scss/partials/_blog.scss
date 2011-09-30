@@ -9,9 +9,29 @@
     position: relative;
 
     .content {
-      font-size: 16px;
+      font-size: 1.6em;
       color: #474747;
-      line-height: 24px;
+      line-height: 1.5em;
+
+      p {
+        margin-bottom: 1em;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      ul, ol {
+        margin: 0px 0 1em 2.5em;
+        padding: 0px;
+      }
+
+      blockquote {
+        border-left: solid 1px gray;
+        margin-bottom: 1em;
+        padding: 1em;
+      }
     }
 
     header h1 {
@@ -90,11 +110,14 @@
     top: 0px;
     right: 0px;
 
-    h2 {
+    h2 {    
+      background: url("/images/the47th/bg_squiggle.gif") no-repeat scroll 53px top white;
       color: #4c3836;
       font-family: $quicksandbold-stack; 
       font-size: 12px;
       font-weight: normal;
+      margin-bottom: 15px;
+      padding-top: 3px;
       text-transform: uppercase;
     }
     input[type="search"] {
@@ -105,6 +128,7 @@
       display: block;
       height: 22px;
       line-height: 22px;
+      margin-bottom: 40px;
       padding: 0 25px 0 10px;
       width: 125px;
 
@@ -113,5 +137,102 @@
         background: #ffffff !important;
       }
     }
+
+    ul {
+      list-style: none;
+      font-family: $vollkornbolditalic-stack;
+      font-size: 1.4em;
+      
+      li {
+        line-height: 20px;
+        margin-bottom: 17px;
+
+        &.twitter,
+        &.rss { 
+          background: transparent url(../images/the47th/blog/aside_sprite.png) left 4px no-repeat; 
+          padding-left: 60px;
+        }
+        &.rss {
+          line-height: 42px;
+          background-position: 0 -80px;
+        }
+      }
+
+      &.follow_us li {
+        background-position: 0 -165px;
+      }
+
+      &.follow_us, &.follow_the47th {
+        border-top: double 4px #efeaea;
+        padding-top: 17px;
+      }
+
+      a {
+        font-family: $vollkornitalic-stack;
+        display: block;
+        clear: both;
+        text-decoration: none;
+
+        &:hover {
+          border-bottom: none;
+        }
+      }
+    }
+  }
+}
+
+.pagination {
+  @include columns(12);
+  @include alpha;
+  border-top: double 4px #efeaea;
+  padding-top: 20px;
+
+  span, a {
+    display: inline-block;
+    min-height: 34px;
+    &:hover {
+      border: none;
+      text-decoration: none;
+    }
+  }
+  a {
+    text-decoration: none;
+    color: #747474;
+    display: inline-block;
+    font-size: 13px;
+    line-height: 30px;
+    text-align: center;
+    width: 34px;
+  }
+  .current {
+    @include border-radius(17px);
+    background: none repeat scroll 0 0 #CA0000;
+    color: #FFFFFF;
+    display: inline-block;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    width: 34px;
+  }
+
+  .prev_page,
+  .next_page {
+    text-align: left;
+    background: transparent url(../images/the47th/blog/nav_sprite.png) top left no-repeat;
+    width: 36px;
+    overflow: hidden;
+    height: 0px;
+    min-height: 0px;
+    padding-top: 36px;
+  }
+  .prev_page {
+    @include columns(3, 12);
+    &.disabled {
+      opacity: .3;
+    }
+  }
+  .next_page {
+    background-position: left bottom;
+    float: right;
   }
 }
