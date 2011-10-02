@@ -1,7 +1,9 @@
 #container > footer {
-  @include clearfix;
-  padding: 40px 0;
+  border-top: double 4px #efeaea;
   clear: both;
+  margin-top: 100px;
+  padding: 40px 0;
+  @include clearfix;
 
   h1, p { font-size: 16px; }
   h1 {

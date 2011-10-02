@@ -1,0 +1,145 @@
+#contact #main {
+  clear: both;
+  overflow: hidden;
+
+  header {
+    @include columns(4);
+    @include alpha;
+
+    h1 {
+      font-family: $quicksandbook-stack;
+      font-size: 28px;
+      font-weight: normal;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 34px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+
+  section {
+    @include columns(8);
+    background: #f9f6f1;
+  }
+  form {
+    padding: 26px 0 0;
+    p { 
+      overflow: hidden; 
+      clear: both; 
+      padding: 10px 0;
+
+      &.submit {
+        background: #f3eee3 url(../images/the47th/contact/squiggles.png) 30px center no-repeat;
+        overflow: hidden;
+        margin-top: 30px;
+        padding: 20px 30px;
+
+        input {
+          background: transparent url(../images/the47th/contact/submit.png) top left no-repeat;
+          width: 102px;
+          height: 31px;
+          padding: 0px;
+          float: right;
+          text-align: left;
+          text-indent: -9999px;
+          border: none;
+        }
+      }
+    }
+    label {
+      @include columns(2, 8);
+      color: #796d59;
+      padding-top: 2px;
+      text-align: right;
+      font-family: $vollkornitalic-stack;
+      font-size: 16px;
+
+      &[for="superpower"], .superpower {
+        float: none;
+        display: block;
+        clear: both;
+        margin: 0px;
+        padding: 0px;
+        width: 360px;
+        text-align: left;
+
+        &:before { 
+          background: transparent url(../images/the47th/contact/superpower_star.png) bottom right no-repeat;
+          content: "SUPER POWER";
+          display: block;
+          float: left;
+          font-family: $quicksandbook-stack;
+          font-size: 11px;
+          height: 15px;
+          letter-spacing: 1px;
+          margin-left: 41px;
+          margin-right: 20px;
+          padding-bottom: 60px;
+          padding-top: 6px;
+          text-align: left;
+          text-transform: uppercase;
+          width: 60px;
+        }
+      }
+
+    }
+    select {
+      margin-top: 10px;
+      width: 215px;
+    }
+
+    input, textarea {
+      border: solid 1px #c4c3c1;
+      margin-left: -2px;
+      padding: 0px 6px;
+      width: 67%;
+      height: 24px;
+      line-height: 24px;
+      font-family: $georgia-stack;
+      font-size: 13px;
+    }
+    textarea {
+      height: 240px;
+      resize: none;
+      padding-right: 0px;
+      width: 68%;
+    }
+  }
+  aside { 
+    @include columns(3);
+    @include prefix(1);
+    @include omega;
+
+    ul {
+      list-style: none;
+    }
+    li {
+      @extend .aside_icon;
+    }
+  }
+
+  .adr {
+    margin-top: 30px;
+    border-top: double 4px #efeaea;
+    padding-top: 20px;
+    font-family: $vollkornitalic-stack;
+    font-size: 16px;
+    color: #796d59;
+    line-height: 21px;
+
+    a:link,
+    a:visited,
+    a:hover,
+    a:active {
+      border: none;
+      text-decoration: none;
+    }
+
+    img {
+      margin-top: 20px;
+    }
+  }
+}

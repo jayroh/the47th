@@ -1,3 +1,42 @@
+.aside_icon {
+  background: transparent url(../images/the47th/blog/aside_sprite.png) left 4px no-repeat; 
+  font-family: $vollkornbolditalic-stack;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 17px;
+  padding-left: 60px;
+
+  &.rss {
+    line-height: 42px;
+    background-position: 0 -80px;
+  }
+
+  &.follow_us {
+    background-position: 0 -165px;
+  }
+
+  &.facebook {
+    background-position: 0 -252px;
+  }
+
+  &.email {
+    background-position: 0 -338px;
+  }
+
+  a {
+    font-family: $vollkornitalic-stack;
+    display: block;
+    clear: both;
+    text-decoration: none;
+
+    &:hover {
+      border-bottom: none;
+    }
+  }
+}
+
+
+
 #blog {
   article {
     @include columns(9);
@@ -144,39 +183,15 @@
       font-size: 1.4em;
       
       li {
-        line-height: 20px;
-        margin-bottom: 17px;
-
-        &.twitter,
-        &.rss { 
-          background: transparent url(../images/the47th/blog/aside_sprite.png) left 4px no-repeat; 
-          padding-left: 60px;
-        }
-        &.rss {
-          line-height: 42px;
-          background-position: 0 -80px;
-        }
+        @extend .aside_icon;
       }
 
-      &.follow_us li {
-        background-position: 0 -165px;
-      }
 
       &.follow_us, &.follow_the47th {
         border-top: double 4px #efeaea;
         padding-top: 17px;
       }
 
-      a {
-        font-family: $vollkornitalic-stack;
-        display: block;
-        clear: both;
-        text-decoration: none;
-
-        &:hover {
-          border-bottom: none;
-        }
-      }
     }
   }
 }

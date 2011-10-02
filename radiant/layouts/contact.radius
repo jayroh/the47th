@@ -1,0 +1,66 @@
+<!doctype html> 
+  <!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+  <!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+  <!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+  <!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+  <!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+  <head>
+    <r:snippet name="header-head-tags" />
+  </head>
+  <body id="contact">
+    <div id="container">
+      <r:snippet name="header" />
+      <div id="main">
+        <header>
+          <h1>Hi There!</h1>
+          <p>Thanks for making it this far. Did you know that on a typical site only about 5% of people ever make it to every page? Way to go! You finished the internet.</p>
+        </header>
+        <section>
+          <form action="#" method="post" accept-charset="utf-8">
+            <p>
+              <label for="name">Name</label>
+              <input type="text" name="name" value="" id="name" />
+            </p>
+            <p>
+              <label for="email">Email</label>
+              <input type="email" name="email" value="" id="email">
+            </p>
+            <p>
+              <label for="comments">Comments</label>
+              <textarea name="comments" id="comments"></textarea>
+            </p>
+            <p>
+              <label for="superpower">If you could have one super power, what would it be?</label>
+              <select name="superpower" id="superpower">
+                <option value="">Select One</option>
+                <option value="flight">flight</option>
+                <option value="flight">flight</option>
+              </select>
+            </p>
+            <p class="submit"><input type="submit" value="Submit"></p>
+          </form>
+        </section>
+        <aside>
+          <ul class="follow_the47th">
+            <li class="twitter">Twitter: <a href="#">@the47th</a></li>
+            <li class="facebook">Facebook: <a href="#">The 47th</a></li>
+            <li class="email">Email: <a href="#">hello@the47th.com</a></li>
+          </ul>
+
+          <div class="adr">
+            <div class="street-address"><a href="http://maps.google.com/maps?q=50+terminal+st+charlestown+ma+02129&oe=utf-8&client=firefox-a&hnear=50+Terminal+St,+Charlestown,+Massachusetts+02129&gl=us&t=m&z=16&vpsrc=0" target="_blank">50 Terminal Street</a></div>
+            <div class="extended-address">4th Floor, Suite 47</div>
+            <span class="locality">Charlestown</span>,
+            <span class="region">MA</span>
+            <span class="postal-code">02129</span>
+            <div class="country-name">U.S.A.</div>
+            <a href="http://maps.google.com/maps?q=50+terminal+st+charlestown+ma+02129&oe=utf-8&client=firefox-a&hnear=50+Terminal+St,+Charlestown,+Massachusetts+02129&gl=us&t=m&z=16&vpsrc=0" target="_blank"><img src="/images/the47th/contact/map.png" alt="50 Terminal St. Map" /></a>
+          </div>
+        </aside>
+      </div><!-- close // #main -->
+      <r:snippet name="footer" />
+    </div><!-- close // #container -->
+    <r:snippet name="footer-javascript" />
+    <r:snippet name="footer-google-analytics" />
+  </body>
+</html>
