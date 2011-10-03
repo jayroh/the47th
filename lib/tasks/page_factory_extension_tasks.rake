@@ -3,44 +3,32 @@ namespace :radiant do
     namespace :page_factory do
 
       namespace :refresh do
-        def factory_class(factory)
-          factory_class = case factory
-          when '', nil : nil
-          when 'page', 'Page' : 'PageFactory'
-          else factory.capitalize + 'PageFactory'
-          end
-        end
         task :update_parts, :factory, :needs => :environment do |task, args|
-          updated = PageFactory::Manager.update_parts factory_class(args[:factory])
+          updated = PageFactory::Manager.update_parts args[:factory]
           puts "Added missing parts from #{updated.join(', ')}"
         end
         task :prune_parts, :factory, :needs => :environment do |task, args|
-          updated = PageFactory::Manager.prune_parts! factory_class(args[:factory])
+          updated = PageFactory::Manager.prune_parts! args[:factory]
           puts "Removed extra parts from #{updated.join(', ')}"
         end
         task :sync_parts, :factory, :needs => :environment do |task, args|
-          updated = PageFactory::Manager.sync_parts! factory_class(args[:factory])
+          updated = PageFactory::Manager.sync_parts! args[:factory]
           puts "Synchronized part classes on #{updated.join(', ')}"
         end
         task :sync_layouts, :factory, :needs => :environment do |task, args|
-          updated = PageFactory::Manager.sync_layouts! factory_class(args[:factory])
+          updated = PageFactory::Manager.sync_layouts! args[:factory]
           puts "Synchronized layouts on #{updated.join(', ')}"
-        end
-        task :sync_classes, :factory, :needs => :environment do |task, args| factory_class(args[:factory])
-          updated = PageFactory::Manager.sync_classes! factory_class(args[:factory])
-          puts "Synchronized page classes on #{updated.join(', ')}"
         end
         desc "Add missing page parts, but don't change or remove any data."
         task :soft, :factory, :needs => :environment do |task, args|
           Rake::Task['radiant:extensions:page_factory:refresh:update_parts'].invoke args[:factory]
         end
-        desc "Make pages look exactly like their factory definitions, including layout and page class."
+        desc "Make pages look exactly like their class definitions, including layout and part classes"
         task :hard, :factory, :needs => :environment do |task, args|
           Rake::Task['radiant:extensions:page_factory:refresh:prune_parts'].invoke args[:factory]
           Rake::Task['radiant:extensions:page_factory:refresh:sync_parts'].invoke args[:factory]
           Rake::Task['radiant:extensions:page_factory:refresh:update_parts'].invoke args[:factory]
           Rake::Task['radiant:extensions:page_factory:refresh:sync_layouts'].invoke args[:factory]
-          Rake::Task['radiant:extensions:page_factory:refresh:sync_classes'].invoke args[:factory]
         end
       end
       
