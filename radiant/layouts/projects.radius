@@ -12,7 +12,7 @@
     <r:snippet name="header" />
     <div id="main">
 
-      <section id="projects">
+      <section class="project_list">
           <header>
             <hgroup>
               <h1>New & Notable</h1>
@@ -20,32 +20,86 @@
             </hgroup>
           </header>
 
-          <ol>
-            <li>
-              <a href="#">
-                <h3>Ring Boxing Club</h3>
-                <ul>
-                  <li>Branding, Website, Business Cards</li>
-                </ul>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <h3>Ring Boxing Club</h3>
-                <ul>
-                  <li>Branding, Website, Business Cards</li>
-                </ul>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <h3>Ring Boxing Club</h3>
-                <ul>
-                  <li>Branding, Website, Business Cards</li>
-                </ul>
-              </a>
-            </li>
-          </ol>
+          <a href="#" class="project">
+            <figure>
+                <img src="/system/photos/10/original/springpad_thumb.jpg" />
+                <figcaption>
+                  <h3>Ring Boxing Club</h3>
+                  <p>Branding, Website, Business Cards</p>
+                </figcaption>
+            </figure>
+          </a>
+
+          <a href="#" class="project">
+            <figure>
+                <img src="/system/photos/10/original/springpad_thumb.jpg" />
+                <figcaption>
+                  <h3>Ring Boxing Club</h3>
+                  <p>Branding, Website, Business Cards</p>
+                </figcaption>
+            </figure>
+          </a>
+
+          <a href="#" class="project hover">
+            <figure>
+                <img src="/system/photos/10/original/springpad_thumb.jpg" />
+                <figcaption>
+                  <h3>Ring Boxing Club</h3>
+                  <p>Branding, Website, Business Cards</p>
+                </figcaption>
+            </figure>
+          </a>
+
+          <a href="#" class="project">
+            <figure>
+                <img src="/system/photos/10/original/springpad_thumb.jpg" />
+                <figcaption>
+                  <h3>Ring Boxing Club</h3>
+                  <p>Branding, Website, Business Cards</p>
+                </figcaption>
+            </figure>
+          </a>
+
+          <a href="#" class="project">
+            <figure>
+                <img src="/system/photos/10/original/springpad_thumb.jpg" />
+                <figcaption>
+                  <h3>Ring Boxing Club</h3>
+                  <p>Branding, Website, Business Cards</p>
+                </figcaption>
+            </figure>
+          </a>
+
+          <a href="#" class="project">
+            <figure>
+                <img src="/system/photos/10/original/springpad_thumb.jpg" />
+                <figcaption>
+                  <h3>Ring Boxing Club</h3>
+                  <p>Branding, Website, Business Cards</p>
+                </figcaption>
+            </figure>
+          </a>
+
+          <a href="#" class="project">
+            <figure>
+                <img src="/system/photos/10/original/springpad_thumb.jpg" />
+                <figcaption>
+                  <h3>Ring Boxing Club</h3>
+                  <p>Branding, Website, Business Cards</p>
+                </figcaption>
+            </figure>
+          </a>
+
+          <a href="#" class="project">
+            <figure>
+                <img src="/system/photos/10/original/springpad_thumb.jpg" />
+                <figcaption>
+                  <h3>Ring Boxing Club</h3>
+                  <p>Branding, Website, Business Cards</p>
+                </figcaption>
+            </figure>
+          </a>
+
       </section>
 
     </div><!-- close // #main -->

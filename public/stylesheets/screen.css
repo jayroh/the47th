@@ -254,6 +254,22 @@ body#project section#related ul li a:link, body#project section#related ul li a:
 body#project section#related ul li h2 { font-family: "VollkornBold", Georgia, Palatino, "Palatino Linotype", Times, "Times New Roman", serif; font-weight: normal; font-size: 1.4em; }
 body#project section#related ul li p { font-style: italic; font-size: 1.3em; }
 
+body#projects .project_list { border-top: solid 1px #efeaea; padding-top: 57px; }
+body#projects .project_list header { clear: both; overflow: hidden; padding-bottom: 35px; }
+body#projects .project_list hgroup h1 { display: inline; float: left; width: 47.917%; margin-right: 2.083%; margin-left: 1.042%; font-family: "QuicksandBook", Arial, Calibri, Tahoma, "Trebuchet MS", sans-serif; font-size: 30px; font-weight: normal; text-transform: uppercase; line-height: 1em; }
+body#projects .project_list hgroup h2 { display: inline; float: left; width: 47.917%; margin-right: 2.083%; display: inline; float: right; margin-right: 1.042%; #margin-left: -2em; font-weight: normal; font-size: 14px; font-style: italic; color: #796d59; }
+body#projects .project_list .project { display: inline; float: left; width: 22.917%; margin-right: 2.083%; border: none; text-decoration: none; }
+body#projects .project_list .project:hover figure, body#projects .project_list .project.hover figure { border: none; background: #d4bf97; }
+body#projects .project_list .project:nth-of-type(4n+1) { margin-left: 1.042%; }
+body#projects .project_list .project:nth-of-type(4n+4) { display: inline; float: right; margin-right: 1.042%; #margin-left: -2em; }
+body#projects .project_list .project.first { margin-left: 1.042%; }
+body#projects .project_list .project.last { display: inline; float: right; margin-right: 1.042%; #margin-left: -2em; }
+body#projects .project_list .project figure { padding: 5px; }
+body#projects .project_list .project img { display: block; width: 100%; height: auto; }
+body#projects .project_list .project figcaption { background: green; }
+body#projects .project_list .project h3 { background: orange; }
+body#projects .project_list .project p { background: yellow; }
+
 /* Media queries for responsive design These follow after primary styles so they will successfully override.  */
 @media all and (orientation:portrait) { /* Style adjustments for portrait mode goes here */ }
 @media all and (orientation:landscape) { /* Style adjustments for landscape mode goes here */ }
