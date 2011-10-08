@@ -11,12 +11,6 @@
             <r:link />
           </li>
         </r:children:each>
-        <li><a href="#">What we’ve done</a></li>
-        <li><a href="#">How we do it</a></li>
-        <li><a href="#">Who we are</a></li>
-        <li><a href="#">What we’re talking about</a></li>
-        <li><a href="#">How to get in touch</a></li>
-        <li><a href="#">Something random</a></li>
       </ul>
     </r:find>
   </nav>

@@ -1,52 +1,48 @@
 <!doctype html> 
-<!--[if lt IE 7 ]> <html lang="en" class="no-js msie ie6"> <![endif]-->
-<!--[if IE 7 ]>    <html lang="en" class="no-js msie ie7"> <![endif]-->
-<!--[if IE 8 ]>    <html lang="en" class="no-js msie ie8"> <![endif]-->
-<!--[if IE 9 ]>    <html lang="en" class="no-js msie ie9"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
-	<head>
-		<r:snippet name="header-head-tags" />
-	</head>
-	<body id="project">
-		<div id="container">
-			<r:snippet name="header" />
-			<div id="main">
-				<article>
-					<nav>
-						<a href="#TBD">All Projects</a>
-					</nav>
-					
-					<section id="info">
-						<header>
-							<hgroup>
-								<h1><r:content part="Client Name" /></h1>
-								<h2><r:content part="Type of Project" /></h2>
-							</hgroup>
-						</header>
+  <!--[if lt IE 7 ]> <html lang="en" class="no-js msie ie6"> <![endif]-->
+  <!--[if IE 7 ]>    <html lang="en" class="no-js msie ie7"> <![endif]-->
+  <!--[if IE 8 ]>    <html lang="en" class="no-js msie ie8"> <![endif]-->
+  <!--[if IE 9 ]>    <html lang="en" class="no-js msie ie9"> <![endif]-->
+  <!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+  <head>
+    <r:snippet name="header-head-tags" />
+  </head>
+  <body id="project">
+    <div id="container">
+      <r:snippet name="header" />
+      <div id="main">
+        <article>
+          <nav>
+            <a href="#TBD">All Projects</a>
+          </nav>
 
-						<p><r:content part="Description" /></p>
-						<r:content part="Roles" />
-					</section>
-					
-					<section id="images">
-						<r:content part="Photos" />
-					</section>
-					
-				</article>
+          <section id="info">
+            <header>
+              <hgroup>
+                <h1><r:content part="Client Name" /></h1>
+                <h2><r:content part="Type of Project" /></h2>
+              </hgroup>
+            </header>
+
+            <p><r:content part="Description" /></p>
+            <r:content part="Roles" />
+          </section>
+
+          <section id="images">
+            <r:content part="Photos" />
+          </section>
+        </article>
 
         <section id="related">
           <header>
             <h1>Related Projects</h1>
           </header>
-          <ul>
-            <li><a href="#"><h2>Ring Boxing Club</h2><p>Branding, Website, Business Cards</p></a></li>
-            <li><a href="#"><h2>Ring Boxing Club</h2><p>Branding, Website, Business Cards</p></a></li>
-          </ul>
+          <r:content part="Related Projects" />
         </section>
-			</div><!-- close // #main -->
-			<r:snippet name="footer" />
-		</div><!-- close // #container -->
-		<r:snippet name="footer-javascript" />
-		<r:snippet name="footer-google-analytics" />
-	</body>
+      </div><!-- close // #main -->
+      <r:snippet name="footer" />
+    </div><!-- close // #container -->
+    <r:snippet name="footer-javascript" />
+    <r:snippet name="footer-google-analytics" />
+  </body>
 </html>

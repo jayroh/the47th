@@ -1,111 +1,45 @@
 <!doctype html> 
-<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
-<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
-<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
-<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
-<head>
-  <r:snippet name="header-head-tags" />
-</head>
-<body id="projects">
-  <div id="container">
-    <r:snippet name="header" />
-    <div id="main">
+  <!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+  <!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+  <!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+  <!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+  <!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+  <head>
+    <r:snippet name="header-head-tags" />
+  </head>
+  <body id="projects">
+    <div id="container">
+      <r:snippet name="header" />
+      <div id="main">
 
-      <section class="project_list">
+        <section class="project_list">
           <header>
             <hgroup>
-              <h1>New & Notable</h1>
-              <h2>Lorem ipsum dolor sit amet, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam in.</h2>
+              <h1>New &amp; Notable</h1>
+              <h2><r:content /></h2>
             </hgroup>
           </header>
 
-          <a href="#" class="project">
-            <figure>
-                <img src="/system/photos/10/original/springpad_thumb.jpg" />
-                <figcaption>
-                  <h3>Ring Boxing Club</h3>
-                  <p>Branding, Website, Business Cards</p>
-                </figcaption>
-            </figure>
-          </a>
+          <r:find url="/projects/">
+            <r:children:each>
+              <a href="<r:url />" class="project <r:slug/>">
+                <figure>
+                  <img src="<r:content part="Thumbnail" />" />
+                  <figcaption>
+                    <h3><r:title /></h3>
+                    <p><r:content part="Type of Project" /></p>
+                  </figcaption>
+                </figure>
+              </a>
+            </r:children:each>
+          </r:find>
 
-          <a href="#" class="project">
-            <figure>
-                <img src="/system/photos/10/original/springpad_thumb.jpg" />
-                <figcaption>
-                  <h3>Ring Boxing Club</h3>
-                  <p>Branding, Website, Business Cards</p>
-                </figcaption>
-            </figure>
-          </a>
-
-          <a href="#" class="project">
-            <figure>
-                <img src="/system/photos/10/original/springpad_thumb.jpg" />
-                <figcaption>
-                  <h3>Ring Boxing Club</h3>
-                  <p>Branding, Website, Business Cards</p>
-                </figcaption>
-            </figure>
-          </a>
-
-          <a href="#" class="project">
-            <figure>
-                <img src="/system/photos/10/original/springpad_thumb.jpg" />
-                <figcaption>
-                  <h3>Ring Boxing Club</h3>
-                  <p>Branding, Website, Business Cards</p>
-                </figcaption>
-            </figure>
-          </a>
-
-          <a href="#" class="project">
-            <figure>
-                <img src="/system/photos/10/original/springpad_thumb.jpg" />
-                <figcaption>
-                  <h3>Ring Boxing Club</h3>
-                  <p>Branding, Website, Business Cards</p>
-                </figcaption>
-            </figure>
-          </a>
-
-          <a href="#" class="project">
-            <figure>
-                <img src="/system/photos/10/original/springpad_thumb.jpg" />
-                <figcaption>
-                  <h3>Ring Boxing Club</h3>
-                  <p>Branding, Website, Business Cards</p>
-                </figcaption>
-            </figure>
-          </a>
-
-          <a href="#" class="project">
-            <figure>
-                <img src="/system/photos/10/original/springpad_thumb.jpg" />
-                <figcaption>
-                  <h3>Ring Boxing Club</h3>
-                  <p>Branding, Website, Business Cards</p>
-                </figcaption>
-            </figure>
-          </a>
-
-          <a href="#" class="project">
-            <figure>
-                <img src="/system/photos/10/original/springpad_thumb.jpg" />
-                <figcaption>
-                  <h3>Ring Boxing Club</h3>
-                  <p>Branding, Website, Business Cards</p>
-                </figcaption>
-            </figure>
-          </a>
-
-      </section>
+    </section>
 
     </div><!-- close // #main -->
     <r:snippet name="footer" />
-  </div><!-- close // #container -->
-  <r:snippet name="footer-javascript" />
-  <r:snippet name="footer-google-analytics" />
-</body>
+    </div><!-- close // #container -->
+    <r:snippet name="footer-javascript" />
+    <r:snippet name="footer-google-analytics" />
+  </body>
 </html>

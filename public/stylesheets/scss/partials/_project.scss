@@ -125,7 +125,9 @@ body#project {
 
       li {
         @include columns(4,8);
-        &:last-child { @include omega(8); }
+        @include alpha(8);
+
+        &:nth-of-type(even) { @include omega(8); }
 
         a:link,
         a:visited,
