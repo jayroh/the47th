@@ -5,7 +5,8 @@ class ProjectPage < Page
   part 'Roles',            :description    => "An unordered list of roles we played in this effort"
   part 'Thumbnail',        :page_part_type => "FilePagePart"
   part 'Photos',           :description    => "A collection of images (upload via assets)"
-  part 'Related Projects', :page_part_type => "StringPagePart", :description => "A comma-separated list of project titles (optional)"
+  part 'Related Projects', :description    => "A list of project titles and types (optional)", :content => "<ul>\n\t<li><a href=\"#\">\n\t\t<h2>Ring Boxing Club</h2>\n\t\t<p>Branding, Website, Business Cards</p>\n\t</a></li>\n</ul>"
   remove_part 'body'
   remove_part 'extended'
+  layout 'project'
 end
