@@ -82,6 +82,7 @@ Backtrace:
 /Users/joel/Developer/.rvm/gems/ree-1.8.7-2010.02@the47th2/gems/rack-1.1.2/lib/rack/urlmap.rb:47:in `call'
 /Users/joel/Developer/.rvm/gems/ree-1.8.7-2010.02@the47th2/gems/rack-1.1.2/lib/rack/urlmap.rb:41:in `each'
 /Users/joel/Developer/.rvm/gems/ree-1.8.7-2010.02@the47th2/gems/rack-1.1.2/lib/rack/urlmap.rb:41:in `call'
+/Users/joel/Developer/.rvm/gems/ree-1.8.7-2010.02@the47th2/gems/rails-2.3.14/lib/rails/rack/debugger.rb:19:in `call'
 /Users/joel/Developer/.rvm/gems/ree-1.8.7-2010.02@the47th2/gems/rails-2.3.14/lib/rails/rack/log_tailer.rb:17:in `call'
 /Users/joel/Developer/.rvm/gems/ree-1.8.7-2010.02@the47th2/gems/rack-1.1.2/lib/rack/content_length.rb:13:in `call'
 /Users/joel/Developer/.rvm/gems/ree-1.8.7-2010.02@the47th2/gems/rack-1.1.2/lib/rack/handler/webrick.rb:48:in `service'

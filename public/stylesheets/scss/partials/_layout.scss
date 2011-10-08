@@ -7,7 +7,7 @@ body {
 #container { 
   background: #fff;
   @include container;
-  @include susy-grid-background;
+  // @include susy-grid-background;
   text-align: left;
   border-left: solid 20px #ffffff;
   border-right: solid 20px #ffffff;

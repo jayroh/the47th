@@ -11,7 +11,11 @@ body#projects {
 // font-family: $vollkornbold-stack;
   .project_list {
     border-top: solid 1px #efeaea;
+    overflow: hidden;
     padding-top: 57px;
+    position:relative;
+    background: url("../images/the47th/bg_squiggle.gif") no-repeat scroll 12px 456px white;
+
     header {
       clear: both;
       overflow: hidden;
@@ -38,6 +42,7 @@ body#projects {
     .project {
       @include columns(4);
       border: none;
+      color: #35231e;
       text-decoration: none;
         
       &:hover figure, 
@@ -47,16 +52,24 @@ body#projects {
       }
       &:nth-of-type(4n+1) { @include alpha; }
       &:nth-of-type(4n+4) { @include omega; }
+      &:nth-of-type(-n+5)   { margin-bottom: 60px; }
       &.first             { @include alpha; }
       &.last              { @include omega; }
 
       figure { 
-        padding: 5px; 
+        padding: 5px 5px 40px 5px; 
       }
       img { display: block; width: 100%; height: auto; }
-      figcaption { background: green; }
-      h3 { background: orange; }
-      p { background: yellow; }
+      figcaption { }
+      h3 { 
+        font-family: $vollkornbold-stack;
+        font-weight: normal;
+        font-size: 14px;
+      }
+      p {
+        font-family: $vollkornitalic-stack;
+        font-size: 14px;
+      }
     }
   }
 }
