@@ -16,29 +16,7 @@
           <p>Thanks for making it this far. Did you know that on a typical site only about 5% of people ever make it to every page? Way to go! You finished the internet.</p>
         </header>
         <section>
-          <form action="#" method="post" accept-charset="utf-8">
-            <p>
-              <label for="name">Name</label>
-              <input type="text" name="name" value="" id="name" />
-            </p>
-            <p>
-              <label for="email">Email</label>
-              <input type="email" name="email" value="" id="email">
-            </p>
-            <p>
-              <label for="comments">Comments</label>
-              <textarea name="comments" id="comments"></textarea>
-            </p>
-            <p>
-              <label for="superpower">If you could have one super power, what would it be?</label>
-              <select name="superpower" id="superpower">
-                <option value="">Select One</option>
-                <option value="flight">flight</option>
-                <option value="flight">flight</option>
-              </select>
-            </p>
-            <p class="submit"><input type="submit" value="Submit"></p>
-          </form>
+          <r:content />
         </section>
         <aside>
           <ul class="follow_the47th">
