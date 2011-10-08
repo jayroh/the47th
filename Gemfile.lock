@@ -109,6 +109,7 @@ GEM
       uuidtools (~> 2.1.2)
     radiant-debug-extension (1.0.1)
     radiant-exporter-extension (1.0.1)
+    radiant-mailer-extension (1.0.3)
     radiant-markdown_filter-extension (1.0.1)
       bluecloth (~> 2.1.0)
     radiant-settings-extension (1.1.1)
@@ -160,6 +161,7 @@ DEPENDENCIES
   compass-susy-plugin (= 0.9)
   mysql (~> 2.8.1)
   radiant (= 1.0.0.rc3)
+  radiant-mailer-extension (= 1.0.3)
   radiant-page_factory-extension (= 2.0)!
   radiant-settings-extension (= 1.1.1)
   ruby-debug
