@@ -104,6 +104,7 @@ ActiveRecord::Schema.define(:version => 20100810151922) do
     t.boolean  "virtual",                      :default => false, :null => false
     t.integer  "lock_version",                 :default => 0
     t.string   "page_factory"
+    t.integer  "position",                     :default => 0,     :null => false
   end
 
   add_index "pages", ["class_name"], :name => "pages_class_name"

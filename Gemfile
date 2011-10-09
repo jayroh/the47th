@@ -10,6 +10,10 @@ gem "compass-susy-plugin", '0.9'
 gem "radiant-page_factory-extension", '2.0', :git => "git://github.com/jayroh/radiant-page_factory-extension.git", :branch => "2.0"
 gem "radiant-settings-extension", '1.1.1'
 gem "radiant-mailer-extension", '1.0.3'
+gem "radiant-reorder_children-extension", "1.0.4"
+gem "radiant-vapor-extension", "2.1.2"
+gem "radiant-tags-extension", "1.6.3"
+
 gem "ruby-debug"
 
 # alternatively, in development
