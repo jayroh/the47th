@@ -3,4 +3,4 @@
 	url = git://github.com/johnmuhl/radiant-file-system-resources-extension.git
 [submodule "vendor/extensions/page_parts"]
 	path = vendor/extensions/page_parts
-	url = git@github.com:jayroh/radiant-page_parts-extension.git
+	url = git://github.com/jayroh/radiant-page_parts-extension.git
