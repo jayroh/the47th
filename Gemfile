@@ -11,9 +11,6 @@ gem "radiant-page_factory-extension", '2.0', :git => "git://github.com/jayroh/ra
 gem "radiant-settings-extension", '1.1.1'
 gem "radiant-mailer-extension", '1.0.3'
 gem "radiant-reorder_children-extension", "1.0.4"
-gem "radiant-vapor-extension", "2.1.2"
-gem "radiant-tags-extension", "1.6.3"
-
 gem "ruby-debug"
 
 # alternatively, in development

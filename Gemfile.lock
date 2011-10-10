@@ -120,10 +120,8 @@ GEM
     radiant-site_templates-extension (1.0.1)
     radiant-smarty_pants_filter-extension (1.0.1)
       rubypants (~> 0.2.0)
-    radiant-tags-extension (1.6.3)
     radiant-textile_filter-extension (1.0.3)
       RedCloth (~> 4.2.0)
-    radiant-vapor-extension (2.1.2)
     radius (0.7.1)
     rails (2.3.14)
       actionmailer (= 2.3.14)
@@ -168,8 +166,6 @@ DEPENDENCIES
   radiant-page_factory-extension (= 2.0)!
   radiant-reorder_children-extension (= 1.0.4)
   radiant-settings-extension (= 1.1.1)
-  radiant-tags-extension (= 1.6.3)
-  radiant-vapor-extension (= 2.1.2)
   ruby-debug
   sass (= 3.1.2)
   wirble
