@@ -70,6 +70,7 @@ Backtrace:
 /Users/joel/Developer/.rvm/gems/ree-1.8.7-2010.02@the47th2/gems/rack-1.1.2/lib/rack/head.rb:9:in `call'
 /Users/joel/Developer/.rvm/gems/ree-1.8.7-2010.02@the47th2/gems/rack-1.1.2/lib/rack/methodoverride.rb:24:in `call'
 /Users/joel/Developer/.rvm/gems/ree-1.8.7-2010.02@the47th2/gems/actionpack-2.3.14/lib/action_controller/params_parser.rb:15:in `call'
+/Users/joel/Developer/.rvm/gems/ree-1.8.7-2010.02@the47th2/gems/rails-2.3.14/lib/rails/rack/metal.rb:47:in `call'
 /Users/joel/Developer/.rvm/gems/ree-1.8.7-2010.02@the47th2/gems/actionpack-2.3.14/lib/action_controller/session/cookie_store.rb:99:in `call'
 /Users/joel/Developer/.rvm/gems/ree-1.8.7-2010.02@the47th2/gems/actionpack-2.3.14/lib/action_controller/failsafe.rb:26:in `call'
 /Users/joel/Developer/.rvm/gems/ree-1.8.7-2010.02@the47th2/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
